@@ -4,12 +4,49 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
+     background-color: #081b29;
+     height: 100vh;
+}
+header{
+   height: 60px;
+   background-color:#0b2639 ;
+   display: flex;
+   align-items: center;
+    margin-bottom: 20px;
+}
+header h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 10px;
+}
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul li{
+    
+    list-style: none;
+}
+ul li a{
+    margin-right:10px;
+    /* padding: 0 20px; */
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.5s ease-in-out;
+}
+ul li a:hover{
+    color: #50cce5;
+}
+.container{
+    height: 85vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #081b29;
     overflow: hidden;
 }
 .wrapper{
@@ -17,8 +54,8 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     /* background-color: seagreen; */
     border-radius: 50%;
     animation: anim 20s linear 1s infinite ;
@@ -160,4 +197,125 @@ body{
     background-color: white;
   box-shadow: none;
     /* transform-origin: bottom; */
+}
+
+/* calender css */
+.cont{
+    color: #fff;
+}
+.cont h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box1,.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    /* margin-bottom: 10px; */
+}
+.box1 :first-child{
+    border-left: 1px solid #50cce5;
+}
+.box1 :last-child{
+    border-right: 1px solid #50cce5;
+}
+.box1 span{
+    /* margin-right: 10px; */
+    width: 80px;
+    height: 60px;
+    font-weight: bold;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box span{
+    width: 80px;
+    height: 40px;
+    /* background-color: red; */
+    /* margin: 5px; */
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #50cce5;
+}
+
+.btns{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 45%;
+    height: 80px;
+    transform: translate(0, 50%);
+}
+.btns :first-child{
+    margin-left:15% ;
+}
+.btns :last-child{
+    margin-right:15% ;
+}
+.btn{
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    background-color: #11324a;
+    cursor: pointer;
+    color: #fff;
+}
+.btn:hover{
+    box-shadow: 1px 2px 1px 2px #ccc;
+}
+.currentDate{
+    background-color: rgb(129, 255, 223);
+    color: red;
+    font-weight: bold;
+}
+.p,.n{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: relative;
+}
+.p::before,.n::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background-color: #11324a;
+    /* transform: rotate(45deg); */
+}
+.p::before{
+    right: -12px;
+    top: -12px;
+    transform: rotate(45deg);
+}
+.n::before{
+    left: -12px;
+    bottom: -12px;
+    transform: rotate(45deg);
+}
+.p::after,.n::after{
+    content: "";
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.n::after{
+    right: 0;
+    top: 8px;
+}
+.p::after{
+    left: 0;
+    bottom: 8px;
 }
