@@ -230,6 +230,7 @@ ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid #50cce5;
 }
 .box span{
     width: 80px;
