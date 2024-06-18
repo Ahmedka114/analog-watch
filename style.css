@@ -256,6 +256,7 @@ ul li a:hover{
     bottom: 45%;
     height: 80px;
     transform: translate(0, 50%);
+    
 }
 .btns :first-child{
     margin-left:15% ;
@@ -270,9 +271,10 @@ ul li a:hover{
     background-color: #11324a;
     cursor: pointer;
     color: #fff;
+    border: none;
 }
 .btn:hover{
-    box-shadow: 1px 2px 1px 2px #ccc;
+    box-shadow: 1px 2px 1px 2px #535353;
 }
 .currentDate{
     background-color: rgb(129, 255, 223);
