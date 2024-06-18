@@ -265,7 +265,7 @@ ul li a:hover{
 .btn{
     width: 60px;
     height: 40px;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #11324a;
     cursor: pointer;
     color: #fff;
@@ -278,44 +278,11 @@ ul li a:hover{
     color: red;
     font-weight: bold;
 }
-.p,.n{
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    position: relative;
-}
-.p::before,.n::before{
-    content: "";
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    background-color: #11324a;
-    /* transform: rotate(45deg); */
-}
-.p::before{
-    right: -12px;
-    top: -12px;
-    transform: rotate(45deg);
-}
-.n::before{
-    left: -12px;
-    bottom: -12px;
-    transform: rotate(45deg);
-}
-.p::after,.n::after{
-    content: "";
-    width: 20px;
-    height: 4px;
-    background-color: #fff;
-    position: absolute;
-    transform: rotate(-45deg);
-}
-.n::after{
-    right: 0;
-    top: 8px;
-}
-.p::after{
-    left: 0;
-    bottom: 8px;
+.btn span{
+    width: 60px;
+    height: 40px;
+    font-size: 27px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
 }
